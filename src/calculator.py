@@ -1,22 +1,4 @@
-# Add two numbers
-def add(x, y):
-    return x + y
-
-# Subtract two numbers
-def subtract(x, y):
-    return x - y
-
-# Multiply two numbers
-def multiply(x, y):
-    return x * y
-
-# Divide two numbers
-def divide(x, y):
-    if(y!=0):
-        return x / y
-    else:
-        print("Invalid Divisor!")
-
+import operations
 
 def calculator():
 
@@ -29,25 +11,26 @@ def calculator():
     while True:
 
         operator = input("Enter choice (+, -, *, /): ")
-        num1 = int(input('First operand: '))
-        num2 = int(input('Second operand: '))
 
         if operator in ('+', '-', '*', '/'):
+            
+            num1 = int(input('First operand: '))
+            num2 = int(input('Second operand: '))
             if operator == '+':
                 print('{} + {} = '.format(num1, num2))
-                print(add(num1,num2))
+                print(operations.add(num1,num2))
 
             elif operator == '-':
                 print('{} - {} = '.format(num1, num2))
-                print(subtract(num1,num2))
+                print(operations.subtract(num1,num2))
 
             elif operator == '*':
                 print('{} * {} = '.format(num1, num2))
-                print(multiply(num1,num2))
+                print(operations.multiply(num1,num2))
 
             elif operator == '/':
                 print('{} / {} = '.format(num1, num2))
-                print(divide(num1,num2))
+                print(operations.divide(num1,num2))
 
             again = input("Calculate again? (Y/N): ")
             if again == "N":
@@ -58,6 +41,3 @@ def calculator():
 
 # Function call to calculator
 calculator()
-
-
-
