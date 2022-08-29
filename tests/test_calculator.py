@@ -5,7 +5,7 @@ Created on Sun Aug 28 13:42:45 2022
 @author: Karan-PC
 """
 import unittest
-from operations import add, subtract, multiply, divide
+from CSC510_43.src.operations import add, subtract, multiply, divide
 
 class TestCalculator(unittest.TestCase):
     
