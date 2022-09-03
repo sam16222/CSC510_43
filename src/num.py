@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
 import random
 from main import the
 
@@ -58,8 +52,4 @@ class Num:
             mid = (lst[len(lst)//2]+lst[(len(lst)//2)-1])/2
         else:
             mid = lst[len(lst)//2]
-        return mid
-
-
-   
-    
+        return mid 
