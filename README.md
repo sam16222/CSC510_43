@@ -4,38 +4,24 @@
 This repository is created to showcase the different concepts learned through our coursework as part of CSC 510 offered in Fall '22 at NC State University.
 
 ## Introduction
-This is a basic application that handles the following calculator operations: Addition, Subtraction, Multiplication, Division.
+A Python application to read CSV files and generate summaries of columns (medians and standard deviation for numerics; mode and entropy for symbolic columns).
+
+## Homeworks
+|Homework| Status| Task|
+|:------:|:------|:------|
+|HW2     |&check;|Get this going for the `Num` and `Sym` class (below) and the tests cases `the`, `sym`, `num`, `bignum`.|
+|HW3     |&cross;|Get this going for the `Cols`, `Row`, `Data` class and the test cases `eg.csv, eg.data, eg.stats`.|
+|HW4     |&cross;|Add all the bling from HW1. Also, add post-commit hooks to auto run all the test cases, the code coverage checks (if your language supports then), and the documentation generators.  For more on what kinds of documentation is acceptable, see [the web site from lecture1](https://user-images.githubusercontent.com/29195/130997647-d933884e-8e5c-4f0c-a367-6a5d69bb1df1.png).|
+|HW5     |&cross;|For five other groups from cs510 (picked at random), apply the Project1 [rubric](https://github.com/txt/se22/blob/main/docs/proj1.md#rubric).  Important note: whatever scores you offer, these will **not** change the other group's scores.|
 
 ## Installation
 This repository does not use any dependencies and you only need python 3.6 or above installed to run the application.
 
 ## Instructions
-Make sure you are in the base folder.
-Run the code by typing the following in the terminal:
+Make sure you are in the base folder.<br><br>
+Run the tests by typing the following in the terminal:
 ```bash
-python src/calculator.py
-```
-You will see the following output:
-```bash
-Select operation:
-+ for addition
-- for subtraction
-* for multiplication
-/ for division
-Enter choice (+, -, *, /): 
-```
-You can then enter the choice and the two numbers you want to perform the operation on.
-```bash
-Enter choice (+, -, *, /): +
-First operand: 4
-Second operand: 5
-4 + 5 = 
-9
-```
-You can exit the application by typing 'N' or continue using it by entering 'Y'.
-```bash
-Calculate again? (Y/N): Y
-Enter choice (+, -, *, /): 
+pytest
 ```
 
 ## Meet the Team
