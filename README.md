@@ -39,4 +39,4 @@ Enter choice (+, -, *, /):
 ```
 
 ## Meet the Team
-![Team](assets/team.png)
+![Team](assets/team_edit.png)
