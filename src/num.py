@@ -1,5 +1,5 @@
 import random
-from main import the
+from CSC510_43.src.main import the
 
 class Num:
     def __init__(self,c=0,s=""):
