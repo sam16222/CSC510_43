@@ -25,13 +25,14 @@ class Num:
         if v!="?":
             self.n = self.n+1
             self.lo = min(v, self.lo)
-            self.hi - max(v, self.hi)
+            self.hi = max(v, self.hi)
         length = len(self.has) 
+        pos = -1
         if length < the['nums']:
             pos = length
         elif random.random() < the['nums'] / self.n:
             pos = random.randint(0,length-1)
-        if pos>=0:
+        if pos >= 0:
             self.isSorted = False
             if length < the['nums']:
                 self.has.append(float(v))
