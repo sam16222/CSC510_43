@@ -61,16 +61,3 @@ class Num:
             mid = lst[len(lst)//2]
         return mid 
 
-if __name__ == "__main__":
-    num1 = Num()
-    #the['nums'] = 32
-    #for i in range(1,1001):
-        #num1.add(i)
-    #print(num1.nums())
-    
-    for i in range(1,101):
-        num1.add(i)
-    median = num1.mid()
-    stadev = num1.div()
-    print(median)
-    print(stadev)
