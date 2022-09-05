@@ -11,7 +11,7 @@ class TestNum(unittest.TestCase):
         for i in range(1, 101):
             num.add(i)
         std = num.div()
-        self.assertTrue(28 < std < 30)
+        self.assertTrue(30 < std < 32)
 
     def test_mid(self):
         '''Test case for mid function'''
