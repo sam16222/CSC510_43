@@ -1,6 +1,5 @@
 from main import the as mainConfigurations
 
-
 def readCSV():
     dict = {}
 
@@ -11,12 +10,12 @@ def readCSV():
 
     for index in range(len(header)):
         rowArray = []
+        
         for row in rows:
             rowArray.append(row[index])
         dict[header[index]] = rowArray
 
-    print(header)
-
+    print(dict)
 
 # Function call to read the CSV file contents
 readCSV()
