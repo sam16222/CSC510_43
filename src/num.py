@@ -1,4 +1,5 @@
 import random
+import math
 from CSC510_43.src.main import the
 
 class Num:
@@ -40,12 +41,17 @@ class Num:
                 self.has[pos]=float(v)
             
     def div(self):
+        def __percentile(lst,n):
+            size = len(lst)
+            return sorted(lst)[int(math.ceil((size * n) / 100)) - 1]
+        
         a = self.nums();
         total = sum(a)
         length = len(a)
         mean = total / length
         std = (sum([((x - mean) ** 2) for x in a]) / length) ** 0.5
-        return std
+        std1 = (__percentile(a,90) - __percentile(a,10))/2.58
+        return std1
     
     def mid(self):
         lst = self.nums()
@@ -54,3 +60,17 @@ class Num:
         else:
             mid = lst[len(lst)//2]
         return mid 
+
+if __name__ == "__main__":
+    num1 = Num()
+    #the['nums'] = 32
+    #for i in range(1,1001):
+        #num1.add(i)
+    #print(num1.nums())
+    
+    for i in range(1,101):
+        num1.add(i)
+    median = num1.mid()
+    stadev = num1.div()
+    print(median)
+    print(stadev)
