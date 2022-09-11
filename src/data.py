@@ -1,7 +1,7 @@
-from col import Cols
-from main import the
-from misc import isfloat, coerce, csv, push
-from row import Row
+from CSC510_43.src.col import Cols
+from CSC510_43.src.main import the
+from CSC510_43.src.misc import isfloat, coerce, csv, push
+from CSC510_43.src.row import Row
 
 class Data(object):
     def __init__(self, src):
