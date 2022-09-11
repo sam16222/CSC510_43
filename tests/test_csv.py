@@ -1,4 +1,5 @@
 import unittest
+from CSC510_43.src.main import the
 from CSC510_43.src.misc import csv
 from CSC510_43.src.row import Row
 
@@ -13,7 +14,7 @@ class TestCSV(unittest.TestCase):
             print(row)
 
     def test_csv(self):
-        csv("../data/data1.csv", self.fn)
+        csv("data/data1.csv", self.fn)
         return True
 
             
