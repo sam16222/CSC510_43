@@ -1,5 +1,5 @@
-from sym import Sym
-from num import Num
+from CSC510_43.src.sym import Sym
+from CSC510_43.src.num import Num
 
 class Cols(object):
     def __init__(self, names = []):

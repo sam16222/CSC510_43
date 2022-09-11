@@ -1,4 +1,4 @@
-from main import the
+from CSC510_43.src.main import the
 
 def isfloat(string):
     try:
