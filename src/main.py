@@ -10,7 +10,7 @@ class Main:
     the['csvFilePath'] = '../data/data1.csv'
     the['nums'] = 512
     the['seed'] = 10019
-    the['seperator'] = ',]]'
+    the['seperator'] = ','
 
     def mainFunction(argv):  # function to accept cli arguments
         opts = sys.argv
