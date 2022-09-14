@@ -1,28 +1,12 @@
-import unittest
-from CSC510_43.src.main import the
-from CSC510_43.src.num import Num
+from main import the
+from num import Num
 
-class TestNum(unittest.TestCase):
-
-    def test_div(self):
-        '''Test case for div function'''
-        num = Num()
-        the['nums'] = 512
-        for i in range(1, 101):
-            num.add(i)
-        std = num.div()
-        self.assertTrue(30 < std < 32)
-
-    def test_mid(self):
-        '''Test case for mid function'''
-        num = Num()
-        the['nums'] = 512
-        for i in range(1, 101):
-            num.add(i)
-        median = num.mid()
-        self.assertTrue(50 <= median <= 52)
-
-if __name__ == "__main__":
-  unittest.main()
-
-
+def test_num():
+    '''Test case for div function'''
+    num = Num()
+    the['nums'] = 512
+    for i in range(1, 101):
+        num.add(i)
+    std = num.div()
+    median = num.mid()
+    return 0 if 30 < std < 32 and 50 <= median <= 52 else 1

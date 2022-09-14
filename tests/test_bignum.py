@@ -1,18 +1,12 @@
-import unittest
-from CSC510_43.src.main import the
-from CSC510_43.src.num import Num
+from main import the
+from num import Num
 
-class TestBigNum(unittest.TestCase):
-
-    def test_storage(self):
-        '''Test case for storage'''
-        num = Num()
-        the['nums'] = 32
-        for i in range(1, 1001):
-            num.add(i)
-        self.assertEqual(32, len(num.has))
-
-if __name__ == "__main__":
-  unittest.main()
+def test_bignum():
+    '''Test case for storage'''
+    num = Num()
+    the['nums'] = 32
+    for i in range(1, 1001):
+        num.add(i)
+    return 0 if len(num.has) == 32 else 1
 
 
