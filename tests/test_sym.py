@@ -1,10 +1,10 @@
 from sym import Sym
 
 def test_sym():
-    '''Test case for div function'''
+    '''Test case for sym'''
     arr = ["a", "a", "a", "a", "b", "b", "c"]
     sym = Sym()
-    for index, value in enumerate(arr):
+    for _, value in enumerate(arr):
         sym.add(value)
     entropy = sym.div()
     entropy = (1000*entropy)//1/1000

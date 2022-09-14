@@ -3,7 +3,7 @@ from misc import csv
 from row import Row
 n = 0
 def test_csv():
-    '''Test case for csv'''
+    print("Test case for csv")
     def _fn(row):
         global n
         n += 1
@@ -12,6 +12,7 @@ def test_csv():
         else:
             print(row)
     csv("../data/data1.csv", _fn)
+    print()
     return 0
 
             
