@@ -1,5 +1,10 @@
 [![Build](https://github.com/sam16222/CSC510_43/actions/workflows/python-app.yml/badge.svg)](https://github.com/sam16222/CSC510_43/actions/workflows/python-app.yml)
 [![DOI](https://zenodo.org/badge/529913763.svg)](https://zenodo.org/badge/latestdoi/529913763)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
+![GitHub](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)
 # Fall '22 CSC 510 (Group 43)
 This repository is created to showcase the different concepts learned through our coursework as part of CSC 510 offered in Fall '22 at NC State University.
 
