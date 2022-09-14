@@ -21,7 +21,8 @@ This repository does not use any dependencies and you only need python 3.6 or ab
 Make sure you are in the base folder.<br><br>
 Run the tests by typing the following in the terminal:
 ```bash
-pytest
+cd tests
+python engine.py
 ```
 
 ## Meet the Team
