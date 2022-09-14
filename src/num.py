@@ -1,6 +1,6 @@
 import random
 import math
-from CSC510_43.src.main import the
+from main import the
 
 class Num:
     def __init__(self,c=0,s=""):
