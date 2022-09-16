@@ -4,6 +4,8 @@
 name: Build
 
 on:
+  commit:
+    branches: ["*"]
   push:
     branches: [ "main" ]
   pull_request:
