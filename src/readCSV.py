@@ -1,7 +1,7 @@
 from main import the as mainConfigurations
 
-"""This function helps to read the CSV file given as input"""
 def readCSV():
+    """This function helps to read the CSV file given as input"""
     dict = {}
 
     with open(mainConfigurations['csvFilePath']) as file:
@@ -18,5 +18,5 @@ def readCSV():
 
     print(dict)
 
-"""Function call to read the CSV file contents"""
+# Function call to read the CSV file contents
 readCSV()
