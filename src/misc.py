@@ -1,6 +1,7 @@
 from main import the
 
 def isfloat(string):
+    """Check and convert string to float if possible"""
     try:
         float(string)
         return True
@@ -8,6 +9,7 @@ def isfloat(string):
         return False
 
 def coerce(string):
+    """Parse 'the' config settings from 'help'"""
     if isfloat(string):
         return float(string)
     elif string == "true":
@@ -18,6 +20,7 @@ def coerce(string):
         return string
 
 def csv(src, fn):
+    """Call function 'fn' on each row. Row cells are divided in 'the.separator'"""
     sep = the['seperator']
     with open(src, "r") as f:
         for line in f.readlines():
@@ -27,5 +30,6 @@ def csv(src, fn):
             fn(table)
 
 def push(table, row):
+    """Adds 'row' to table and returns the last row"""
     table.append(row)
     return row
