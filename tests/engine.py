@@ -18,7 +18,7 @@ def main():
     result += test_data()
     result += test_stats()
     result += test_csv()
-    print(result, " temp changes")
+    print(result, " temp changess")
     print(result, " tests failed")
     print(7 - result, " tests passed")
     return result
