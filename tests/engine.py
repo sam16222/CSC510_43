@@ -10,6 +10,7 @@ sys.path.insert(0, '../src')
 
 
 def main():
+    print("POST COMMIT HOOK RAN SUCCESSFULLY!")
     result = 0
     result += test_the()
     result += test_num()
@@ -18,7 +19,6 @@ def main():
     result += test_data()
     result += test_stats()
     result += test_csv()
-    print(result, " temp changess")
     print(result, " tests failed")
     print(7 - result, " tests passed")
     return result
