@@ -3,7 +3,7 @@ from num import Num
 
 
 class Cols(object):
-    """This class "Columns" holds summaries of columns
+    """This class "Columns" holds summaries of columns.
     Columns are created once, then may appear in multiple slots"""
 
     def __init__(self, names = []):
