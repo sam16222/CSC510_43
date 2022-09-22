@@ -22,6 +22,13 @@ A Python application to read CSV files and generate summaries of columns (median
 ## Installation
 This repository does not use any dependencies and you only need python 3.6 or above installed to run the application.
 
+## Post commit hooks
+Every developer needs to install post commit hooks at their end. To do so, take the latest pull from main and run the following
+3 commands:
+    1. git config core.hooksPath .githooks
+    2. cd .githooks
+    3. chmod +x post-commit
+
 ## Instructions
 Make sure you are in the base folder.<br><br>
 Run the tests by typing the following in the terminal:

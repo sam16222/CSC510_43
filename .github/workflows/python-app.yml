@@ -36,9 +36,3 @@ jobs:
       run: |
         cd tests
         python engine.py
-    - name: Add the post commit hooks for auto test-case runs
-      run: |
-        git config core.hooksPath .githooks
-        cd .githooks
-        chmod +x post-commit
-
