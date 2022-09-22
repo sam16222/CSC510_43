@@ -7,6 +7,7 @@ from test_bignum import test_bignum
 from test_data import test_data
 from test_stats import test_stats
 from test_csv import test_csv
+
 def main():
     result = 0
     result += test_the()
