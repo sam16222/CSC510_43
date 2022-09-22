@@ -27,7 +27,7 @@ Every developer needs to install post commit hooks at their end. To do so, take 
 3 commands:
    1. git config core.hooksPath .githooks
    2. cd .githooks
-   3. chmod +x post-commit
+   3. chmod +x post-commit (makes the post-commit file executable which runs the test cases)
 
 ## Instructions
 Make sure you are in the base folder.<br><br>
