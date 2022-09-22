@@ -3,28 +3,24 @@ name: CodeCov
 on: [push, pull_request]
 
 jobs:
-  run:
-    runs-on: ubuntu-latest
-    env:
-      OS: ubuntu-latest
-      PYTHON: '3.9'
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: ‘2’
+  build:
 
-    - name: Setup Python
-      uses: actions/setup-python@master
-      with:
-        python-version: 3.7
-    - name: Generate Report
-      run: |
-        pip install coverage
-        cd tests
-        coverage run engine.py
-    - name: Upload Coverage to Codecov
-      uses: codecov/codecov-action@v2
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        directory: ./coverage/reports/
-        fail_ci_if_error: true
+      runs-on: ubuntu-latest
+
+      steps:
+      - uses: actions/checkout@main
+      - uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Generate Report
+        run: |
+          pip install coverage
+          cd tests
+          coverage run engine.py
+      - name: Upload Coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./coverage/reports/
+          fail_ci_if_error: true
+          files: ./coverage.xml
