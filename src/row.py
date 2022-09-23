@@ -1,7 +1,7 @@
 import copy
 
-"""The class 'Row' holds one record"""
 class Row:
+    """The class 'Row' holds one record"""
     def __init__(self,t):
         """This constructor assigns the corresponding values to the variables: 
             cells       -   record being passed, 

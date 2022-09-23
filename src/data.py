@@ -3,8 +3,9 @@ from main import the
 from misc import isfloat, coerce, csv, push
 from row import Row
 
-"""Class Data to add a 'Row' to 'data'"""
+
 class Data(object):
+    """Class Data to add a 'Row' to 'data'"""
     def __init__(self, src):
         """Contructor to initialize cols, rows and add the 'Row' to 'data'"""
         self.cols = None
