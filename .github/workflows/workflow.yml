@@ -15,9 +15,10 @@ jobs:
         pip install coverage
         cd tests
         coverage run engine.py
+    - name: Prints token
+      run: echo ${{ secrets.CODECOV_TOKEN }}
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
-      run: echo ${{ secrets.CODECOV_TOKEN }} 
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         directory: ./coverage/reports/
