@@ -1,6 +1,7 @@
 [![Build](https://github.com/sam16222/CSC510_43/actions/workflows/python-app.yml/badge.svg)](https://github.com/sam16222/CSC510_43/actions/workflows/python-app.yml)
 [![DOI](https://zenodo.org/badge/529913763.svg)](https://zenodo.org/badge/latestdoi/529913763)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![codecov](https://codecov.io/gh/sam16222/CSC510_43/branch/main/graph/badge.svg?token=K88TJ7RBIW)](https://codecov.io/gh/sam16222/CSC510_43)
 
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
