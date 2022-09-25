@@ -1,7 +1,5 @@
 
-# HW5
-
-# 1. https://github.com/smanishs175/group18-HW-2-3-4-5 
+# HW5 Rubric Template
 
 |<div style="width:512px">Notes</div>|Assement|Evidence|
 |--------|------|-------|
