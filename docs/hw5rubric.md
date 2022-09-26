@@ -1,7 +1,7 @@
 
 # HW5 Rubric Template
 
-|<div style="width:512px">Notes</div>|Assement|Evidence|
+|<div style="width:256px">Notes</div>|Assessment|Evidence|
 |--------|------|-------|
 |Video1|||
 |Video2|||
