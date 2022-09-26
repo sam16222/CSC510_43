@@ -3,7 +3,7 @@
 
 ## 2. https://github.com/VSangarya/SE22-group23-HW1/tree/hw2
 
-#### Total : 
+#### Total : 166.0
 
 |<div style="width:256px">Notes</div>|Assessment|Evidence|
 |--------|------|-------|
